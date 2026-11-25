@@ -1,1 +1,30 @@
 .vscode/
+
+# ROS 2 / colcon build output
+/build/
+/install/
+/log/
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+
+# Python cache and test output
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Local logs and editor/OS files
+*.log
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Local project notes
+/other/FOLDER_GUIDE.md
+/other/PROJECT_SUMMARY.md
