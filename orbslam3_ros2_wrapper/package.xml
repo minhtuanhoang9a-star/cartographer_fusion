@@ -11,9 +11,16 @@
   <depend>sensor_msgs</depend>
   <depend>geometry_msgs</depend>
   <depend>visual_constraint_msgs</depend>
-  <depend>tf2_ros</depend>
+  <depend>builtin_interfaces</depend>
   <depend>message_filters</depend>
+  <depend>cv_bridge</depend>
+  <depend>eigen</depend>
+  <depend>libopencv-dev</depend>
+  <depend>sophus</depend>
+  <!-- Chỉ cần cho real mode (USE_MOCK_ORBSLAM3=OFF). Bật lại khi orbslam3_core
+       đã build/install được:
   <depend>orbslam3_core</depend>
+  -->
 
   <export>
     <build_type>ament_cmake</build_type>
