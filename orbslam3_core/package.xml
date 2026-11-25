@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>orbslam3_core</name>
+  <version>0.1.0</version>
+  <description>Pure C++ core interface for ORB-SLAM3 integration.</description>
+  <maintainer email="maintainer@example.com">Maintainer</maintainer>
+  <license>GPL-3.0-or-later</license>
+  <buildtool_depend>cmake</buildtool_depend>
+  <export>
+    <build_type>cmake</build_type>
+  </export>
+</package>

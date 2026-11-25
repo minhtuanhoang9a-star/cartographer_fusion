@@ -1,0 +1,3 @@
+@PACKAGE_INIT@
+include("${CMAKE_CURRENT_LIST_DIR}/cartographerTargets.cmake")
+check_required_components(cartographer)

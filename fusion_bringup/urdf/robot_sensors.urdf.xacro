@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="fusion_robot">
+  <link name="base_link"/>
+  <link name="lidar"/>
+  <link name="imu"/>
+  <link name="camera_optical_frame"/>
+
+  <joint name="lidar_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="lidar"/>
+    <origin xyz="0 0 0.35" rpy="0 0 0"/>
+  </joint>
+  <joint name="imu_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="imu"/>
+    <origin xyz="0 0 0.20" rpy="0 0 0"/>
+  </joint>
+  <joint name="camera_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="camera_optical_frame"/>
+    <origin xyz="0.10 0 0.25" rpy="-1.57079632679 0 -1.57079632679"/>
+  </joint>
+</robot>

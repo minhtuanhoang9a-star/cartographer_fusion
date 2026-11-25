@@ -1,0 +1,5 @@
+StereoCamera:
+  vocab_file: ""
+  settings_file: ""
+  detect_only_loop_closing: true
+  cooldown_keyframes: 20

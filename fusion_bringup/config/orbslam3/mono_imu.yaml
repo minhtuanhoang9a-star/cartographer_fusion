@@ -1,0 +1,6 @@
+MonoInertialCamera:
+  vocab_file: ""
+  settings_file: ""
+  detect_only_loop_closing: true
+  cooldown_keyframes: 20
+  require_imu_initialized: true
