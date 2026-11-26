@@ -23,6 +23,9 @@
 #include "absl/types/optional.h"
 #include "cartographer/mapping/id.h"
 #include "cartographer/mapping/submaps.h"
+// Start Modify
+#include "cartographer/sensor/visual_constraint_data.h"
+// End Modify
 #include "cartographer/transform/rigid_transform.h"
 
 namespace cartographer {
@@ -157,6 +160,14 @@ class PoseGraphInterface {
   // problem is solved.
   virtual void SetGlobalSlamOptimizationCallback(
       GlobalSlamOptimizationCallback callback) = 0;
+
+  // Start Modify
+  // Them rang buoc thi giac vao bai toan toi uu. Mac dinh rong de cho phep
+  // Dry-Run truoc khi PoseGraph2D/PoseGraph3D xu ly rang buoc nay.
+  virtual void AddVisualConstraintData(
+      int trajectory_id,
+      const sensor::VisualConstraintData& constraint_data) {}
+  // End Modify
 };
 
 }  // namespace mapping
